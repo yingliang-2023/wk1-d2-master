@@ -5,38 +5,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Web Page</title>
-    <style>
-        header {
-            background:url(images/central_park.jpg) no-repeat;
+    <style>          
+        header{
+            background-image:url(images/central_park.jpg);
+            background-repeat: no-repeat;
             height: 400px;
             background-size: 1500px;
             background-position:0-200px ;
-    
-    
+            padding: 100px;
+            font-size: 100px;
+            color: aquamarine;
+            font-weight: 100px;
+            font-family: Arial, Helvetica, sans;
+            margin: 0;
         }
-    
-    
-    
+
+        li{
+            list-style-type: none;
+            display: inline;
+            padding: 0 20px;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        a:link{
+            color:rgb(235, 124, 20)
+        }
+
+        a:visited{
+            color:#818db3;
+        }
+
+        a:hover{
+            color:rgb(184, 31, 31);
+        }
+
+        a:active{
+            color: rgb(20, 243, 91);
+        }
+
+        nav{
+            background-color: #f0f0d6;
+            height:50px;
+            padding-top:15px;
+            padding-bottom: 15px;
+            text-align: center;
+            margin: 0;
+        }
+
+        main {
+            height: 400px;
+            
+        
+            
+        }
+        
+        main h1{
+            font-size: 50px;
+            color: aquamarine;
+            font-family: Arial;
+
+            }
+
+        footer{
+            height: 40px;
+            color: #818db3;
+            text-align: center;
+            padding-top: 20px;
+            background-color: bisque;
+            
+
+        }
+
+
     </style>
 </head>
+
+<header>My Web Site Brand</header>
 
 
 <body>
 
-<header>
 
-
-
-
-</header>
 
 
     <!-- Container to wrap everything -->
     <div id="container">
 
         <!-- Brand of website -->
-        <header>My Web Site Brand</header>
-
+        
         <!-- Main navigation -->
         <nav>
             <ul>
@@ -60,4 +119,6 @@
     </div>
     <!-- End Container -->
 </body>
+
+
 </html>
