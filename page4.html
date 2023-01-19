@@ -36,12 +36,12 @@
 
 
         <ul id="album">
-            <li id="photo"><img src="images/winterland1.jpg"></li>
+            <!--  <li id="photo"><img src="images/winterland1.jpg"></li>
             <li id="photo"><img src="images/winterland2.jpg"></li>
             <li id="photo"><img src="images/winterland3.jpg"></li>
             <li id="photo"><img src="images/winterland4.jpg"></li>
             <li id="photo"><img src="images/winterland5.jpg"></li>
-            <li id="photo"><img src="images/winterland6.jpg"></li>
+            <li id="photo"><img src="images/winterland6.jpg"></li>     -->
         </ul>
 
 
@@ -52,5 +52,33 @@
 
     </div>
     <!-- End Container -->
+
+    <script>
+        var photo=[];
+        var fileNames=[];
+        var imageList=[];
+        var image;
+        var openList="<li id='photo'>";
+        var closeList="</li>";
+
+        for (var i=0; i<6; i++){
+            fileNames.push("winterland"+(i+1));
+            photo.push("<img src='images/"+fileNames[i]+".jpg'>");
+            image=openList+photo[i]+closeList;
+            imageList.push(image);
+        }
+
+        //insert all final image elements in the album.
+
+        //Display
+        document.getElementById("album").innerHTML=imageList.join(" ");
+
+    </script>
+
+
+
+
+
+
 </body>
 </html>
