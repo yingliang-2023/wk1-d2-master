@@ -112,6 +112,20 @@ textarea{
     height: 100px;
 }
 
+
+/*Main content - Gallery */
+
+main #album #photo img{
+    width:400px;
+}
+
+
+
+
+
+
+
+
 /*footer*/
 footer{
     height: 40px;
@@ -122,3 +136,5 @@ footer{
     
 
 }
+
+
